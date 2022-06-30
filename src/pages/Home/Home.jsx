@@ -9,17 +9,17 @@ const Home = () => {
   const { isLoading, error, sendRequest } = useHttpClient();
   const [projects, setProjects] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const responseData = await sendRequest(
-          `${process.env.REACT_APP_BACKEND_URL}/project/projects`
-        );
-        setProjects(responseData);
-      } catch (err) {}
-    };
-    fetchData();
-  }, [sendRequest]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const responseData = await sendRequest(
+  //         `${process.env.REACT_APP_BACKEND_URL}/project/projects`
+  //       );
+  //       setProjects(responseData);
+  //     } catch (err) {}
+  //   };
+  //   fetchData();
+  // }, [sendRequest]);
 
   return (
     <React.Fragment>

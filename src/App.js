@@ -8,7 +8,6 @@ import {
 
 import Navigation from './common/components/Navigation/Navigation';
 import Footer from './common/components/Footer/Footer';
-import CampaignBanner from './pages/Misc/CampaignBanner';
 import { LoadingSpinner } from './common/components/UIElements/loadingAnimations';
 
 /**
@@ -34,7 +33,6 @@ const App = () => {
   return (
     <React.Fragment>
       <Router>
-        <CampaignBanner />
         <Navigation />
         <React.Suspense fallback={<LoadingSpinner />}>
           <Routes>

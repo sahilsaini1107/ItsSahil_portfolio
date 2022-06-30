@@ -6,7 +6,7 @@ import './CampaignBanner.scss';
 
 const CampaignBanner = () => {
   return (
-    <div className="banner">
+    <div className="Banner">
       <p>
         Open to opportunities{' '}
         <Link to="/contact">
