@@ -13,7 +13,7 @@ const Home = () => {
   //   const fetchData = async () => {
   //     try {
   //       const responseData = await sendRequest(
-  //         `${process.env.REACT_APP_BACKEND_URL}/project/projects`
+  //         `${process.env.REACT_APP_BACKEND_URL}/project/projects`, {mode:'cors'}
   //       );
   //       setProjects(responseData);
   //     } catch (err) {}
@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>its Sahil Saini</title>
+        <title>Sahil Saini</title>
         <meta
           name="description"
           content="Hi! I'm Sahil - a web developer, web designer and a passionate learner. I love to contribute to open source projects"

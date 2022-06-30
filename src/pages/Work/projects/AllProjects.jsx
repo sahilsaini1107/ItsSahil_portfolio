@@ -19,7 +19,7 @@ const AllProjects = () => {
     const fetchData = async () => {
       try {
         const responseData = await sendRequest(
-          `${process.env.REACT_APP_BACKEND_URL}/project/projects`
+          `${process.env.REACT_APP_BACKEND_URL}/project/projects`, {mode:'cors'}
         );
         setProjects(responseData);
       } catch (err) {}
